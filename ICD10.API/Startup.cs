@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ICD10.API.Data;
+using ICD10.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Serialization;
 
 namespace ICD10.API
 {
@@ -29,7 +33,21 @@ namespace ICD10.API
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<ICD10DbContext>(options => options.UseNpgsql(connectionString));                            
+            services.AddDbContext<ICD10DbContext>(options => options.UseNpgsql(connectionString));
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<IUrlHelper>(factory =>
+            {
+                var actionContext = factory.GetService<IActionContextAccessor>().ActionContext;
+                return new UrlHelper(actionContext);
+            });
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddTransient<ICodeService, CodeService>();
+            services.AddMvc()
+                    .AddJsonOptions(options =>
+                    {
+                        options.SerializerSettings.ContractResolver =
+                            new CamelCasePropertyNamesContractResolver();
+                    });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

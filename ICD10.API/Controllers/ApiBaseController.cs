@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ICD10.API.Data;
+using ICD10.API.Lib.Pagination;
 using ICD10.API.Models;
 using ICD10.API.Models.Response;
 using Microsoft.AspNetCore.Http;
@@ -14,26 +15,12 @@ namespace ICD10.API.Controllers
     [ApiController]
     public class ApiBaseController : Controller
     {
-        protected ICD10DbContext _dbContext;
+        protected IUrlHelper _urlHelper;
 
-        public ApiBaseController(ICD10DbContext context)
+        public ApiBaseController(IUrlHelper urlHelper)
         {
-            _dbContext = context;
-        }
-
-        protected static List<ICD10ResponseCategoryModel> GetResponseItems(List<ICD10Category> categories)
-        {
-            var items = new List<ICD10ResponseCategoryModel>();
-            foreach (var item in categories)
-            {
-                var responseItem = new ICD10ResponseCategoryModel();
-                responseItem.Code = item.Code;
-                responseItem.Title = item.Title;
-                items.Add(responseItem);
-            }
-
-            return items;
-        }
+            _urlHelper = urlHelper;
+        }      
 
         protected static List<ICD10ResponseCodeModel> GetResponseItems(List<ICD10Code> codes)
         {
@@ -50,6 +37,34 @@ namespace ICD10.API.Controllers
                 items.Add(responseItem);
             }
             return items;
+        }
+
+        protected List<LinkInfo> GetLinks<T>(PagedList<T> list, string methodName)
+        {
+            var links = new List<LinkInfo>();
+
+            if (list.HasPreviousPage)
+                links.Add(CreateLink(methodName, list.PreviousPageNumber, list.PageSize, "previousPage", "GET"));
+
+            links.Add(CreateLink(methodName, list.PageNumber, list.PageSize, "self", "GET"));
+
+            if (list.HasNextPage)
+                links.Add(CreateLink(methodName, list.NextPageNumber,list.PageSize, "nextPage", "GET"));
+
+            return links;
+        }
+
+
+        private LinkInfo CreateLink(string routeName, int pageNumber, int pageSize,
+                                    string rel, string method)
+        {
+            return new LinkInfo
+            {
+                Href = _urlHelper.Link(routeName,
+                            new { PageNumber = pageNumber, PageSize = pageSize }),
+                Rel = rel,
+                Method = method
+            };
         }
     }
 }
