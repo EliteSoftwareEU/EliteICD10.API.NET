@@ -7,6 +7,8 @@
   <ItemGroup>
     <Folder Include="Data\CSV\" />
     <Folder Include="wwwroot\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,6 +16,11 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.0" />
+    <PackageReference Include="AspNetCore.RouteAnalyzer" Version="0.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\ValuesController.cs" />
+    <Compile Remove="Filters\PaginationFilter.cs" />
+  </ItemGroup>
 </Project>

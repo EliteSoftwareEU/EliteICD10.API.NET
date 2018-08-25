@@ -9,6 +9,9 @@ namespace ICD10.API.Services
 {
     public interface ICodeService
     {
-        PagedList<ICD10Code> GetCodes(PagingParams pagingParams);
+        PagedList GetCodes(ApiParams pagingParams);
+        PagedList GetCodes(string firstLetter, ApiParams apiParams);
+        PagedList GetCodesFromCategory(string categoryCode, ApiParams apiParams);
+        ICD10Code GetCode(string diagnosisCode);
     }
 }

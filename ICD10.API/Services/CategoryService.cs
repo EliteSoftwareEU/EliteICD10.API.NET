@@ -1,11 +1,12 @@
 ﻿using ICD10.API.Data;
 using ICD10.API.Lib.Pagination;
 using ICD10.API.Models;
+using ICD10.API.Models.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Microsoft.EntityFrameworkCore;
 namespace ICD10.API.Services
 {
     public class CategoryService : ICategoryService
@@ -19,17 +20,40 @@ namespace ICD10.API.Services
             _categories = _context.Categories.ToList();
         }
 
-        public PagedList<ICD10Category> GetCategories(PagingParams pagingParams)
+        public PagedList GetCategories(ApiParams apiParams)
         {
             var query = _categories.AsQueryable();
-            return new PagedList<ICD10Category>(query, pagingParams.PageNumber, pagingParams.PageSize);
+            return FilterAndReturnPagedList(apiParams, ref query);
         }
 
-        public PagedList<ICD10Category> GetCategoriesByLetter(string letter, PagingParams pagingParams)
+        public PagedList GetCategories(string firstLetter, ApiParams apiParams)
         {
-            var query = _categories.Where(c => c.Code.ToLower().StartsWith(letter.ToLower()))
+            var query = _categories.Where(c => c.Code.ToLower().StartsWith(firstLetter.ToLower()))
                                    .AsQueryable();
-            return new PagedList<ICD10Category>(query, pagingParams.PageNumber, pagingParams.PageSize);
+            return FilterAndReturnPagedList(apiParams, ref query);
+        }
+
+        public ICD10Category GetCategory(string categoryCode)
+        {
+            var category = _context.Categories
+                            .Where(c => c.Code.ToLowerInvariant() == categoryCode.ToLowerInvariant())
+                            .Include(c => c.ICD10Codes)
+                            .FirstOrDefault();
+            
+            return category;                         
+        }
+
+        private static PagedList FilterAndReturnPagedList(ApiParams apiParams, ref IQueryable<ICD10Category> query)
+        {
+            var filterBy = apiParams.FilterBy.Trim().ToLowerInvariant();
+            if (!string.IsNullOrEmpty(filterBy))
+            {
+                query = query
+                       .Where(m => m.Title.ToLowerInvariant().Contains(filterBy)
+                       || m.Code.ToLowerInvariant().Contains(filterBy));
+            }
+
+            return new PagedList(query, apiParams.PageNumber, apiParams.PageSize);
         }
     }
 }

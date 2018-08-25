@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore.RouteAnalyzer;
 using ICD10.API.Data;
 using ICD10.API.Services;
 using Microsoft.AspNetCore.Builder;
@@ -45,9 +46,12 @@ namespace ICD10.API
             services.AddMvc()
                     .AddJsonOptions(options =>
                     {
+                        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                         options.SerializerSettings.ContractResolver =
                             new CamelCasePropertyNamesContractResolver();
                     });
+             services.AddRouteAnalyzer();  
+
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -62,7 +66,13 @@ namespace ICD10.API
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRouteAnalyzer("/routes"); 
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{action=Index}/{id?}");
+            });
         }
     }
 }

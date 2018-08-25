@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ICD10.API.Data;
+﻿using ICD10.API.Exceptions;
+using ICD10.API.Filters;
 using ICD10.API.Lib.Pagination;
-using ICD10.API.Models;
 using ICD10.API.Models.Response;
 using ICD10.API.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace ICD10.API.Controllers
 {
@@ -17,67 +11,53 @@ namespace ICD10.API.Controllers
     [ApiController]
     public class CodesController : ApiBaseController
     {
-        private readonly ICodeService _service;
+        readonly ICodeService _service;
 
-        public CodesController(IUrlHelper urlHelper, ICodeService service) : base(urlHelper)
+        public CodesController(ICodeService service) : base()
         {
-            _urlHelper = urlHelper;
             _service = service;
         }
 
-        [Route("by-letter/{letter}")]
-        [HttpGet]
-        public IActionResult ByLetter(string letter)
+        [HttpGet(Name = "GetCodes")]
+        [Route("find")]
+        [QueryableResult("ICD10ResponseCodeModel")]
+        public IActionResult Index([FromQuery] ApiParams apiParams)
         {
-         
-            return Json("ok");
+            var model = _service.GetCodes(apiParams);
+            return Ok(model);
         }
 
-        [HttpGet]
-        public IActionResult Index(PagingParams pagingParams)
+        [HttpGet(Name = "GetCodesByLetter")]
+        [Route("by-letter/{firstLetter}")]
+        [QueryableResult("ICD10ResponseCodeModel")]
+        public IActionResult ByLetter(string firstLetter,
+                                      [FromQuery] ApiParams apiParams)
         {
-            var model = _service.GetCodes(pagingParams);
+            var model = _service.GetCodes(firstLetter, apiParams);
+            return Ok(model);
+        }
 
-            Response.Headers.Add("X-Pagination", model.GetHeader().ToJson());
+        [HttpGet(Name = "GetCodesFromCategory")]
+        [Route("from-category/{categoryCode}")]
+        [QueryableResult("ICD10ResponseCodeModel")]
+        public IActionResult FromCategoryCode(string categoryCode,
+                                              [FromQuery] ApiParams apiParams)
+        {
+            var model = _service.GetCodesFromCategory(categoryCode, apiParams);
+            return Ok(model);
+        }
 
-            var outputModel = new ApiOutputModel
+        [HttpGet(Name = "GetCodeDetails")]
+        [Route("show/{diagnosisCode}")]
+        public IActionResult Show(string diagnosisCode)
+        {
+            var model = _service.GetCode(diagnosisCode);
+            if (model == null) throw new NotFoundException("ICD10 Code does not exists");
+            else
             {
-                Paging = model.GetHeader(),
-                Links = GetLinks(model),
-                Items =new List<dynamic> { null}
-            };
-            return Ok(outputModel);
-        }
-
-        private List<LinkInfo> GetLinks(PagedList<ICD10Code> list)
-        {
-            var links = new List<LinkInfo>();
-
-            if (list.HasPreviousPage)
-                links.Add(CreateLink("GetCodes", list.PreviousPageNumber,
-                           list.PageSize, "previousPage", "GET"));
-
-            links.Add(CreateLink("GetCodes", list.PageNumber,
-                           list.PageSize, "self", "GET"));
-
-            if (list.HasNextPage)
-                links.Add(CreateLink("GetCodes", list.NextPageNumber,
-                           list.PageSize, "nextPage", "GET"));
-
-            return links;
-        }
-
-        private LinkInfo CreateLink(string routeName, int pageNumber, int pageSize,
-                                    string rel, string method)
-        {
-            return new LinkInfo
-            {
-                Href = _urlHelper.Link(routeName,
-                            new { PageNumber = pageNumber, PageSize = pageSize }),
-                Rel = rel,
-                Method = method
-            };
+                var responseModel = ICD10ResponseCodeModel.BuildResponseItem(model);
+                return Ok(new { ICD10Code = responseModel });
+            }
         }
     }
-
 }

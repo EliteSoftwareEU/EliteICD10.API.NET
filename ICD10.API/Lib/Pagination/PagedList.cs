@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace ICD10.API.Lib.Pagination
 {
-    public class PagedList<T>
+    public class PagedList
     {
-        public PagedList(IQueryable<T> source, int pageNumber, int pageSize)
+        public PagedList(IQueryable<dynamic> source, int pageNumber, int pageSize)
         {
             TotalItems = source.Count();
             PageNumber = pageNumber;
@@ -20,7 +20,7 @@ namespace ICD10.API.Lib.Pagination
         public int TotalItems { get; }
         public int PageNumber { get; }
         public int PageSize { get; }
-        public List<T> List { get; }
+        public List<dynamic> List { get; }
         public int TotalPages => (int)Math.Ceiling(TotalItems / (double) PageSize);
         public bool HasPreviousPage => PageNumber > 1;
         public bool HasNextPage => PageNumber < TotalPages;

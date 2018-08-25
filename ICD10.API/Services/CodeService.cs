@@ -20,11 +20,43 @@ namespace ICD10.API.Services
             _codes = _context.Codes.Include(c => c.Category).ToList();
         }
 
-        public PagedList<ICD10Code> GetCodes(PagingParams pagingParams)
+        public PagedList GetCodes(ApiParams apiParams)
         {
             var query = _codes.AsQueryable();
-            return new PagedList<ICD10Code>(query, pagingParams.PageNumber, pagingParams.PageSize);
+            return FilterAndReturnPagedList(apiParams, ref query);
         }
 
+        public PagedList GetCodes(string firstLetter, ApiParams apiParams)
+        {
+            var query = _codes.Where(c => c.Category.Code.ToLowerInvariant().StartsWith(firstLetter))
+                              .AsQueryable();
+            return FilterAndReturnPagedList(apiParams, ref query);
+        }
+
+        public PagedList GetCodesFromCategory(string categoryCode, ApiParams apiParams)
+        {
+            var query = _codes.Where(c => c.Category.Code == categoryCode)
+                              .AsQueryable();
+            return FilterAndReturnPagedList(apiParams, ref query);
+        }
+
+        private static PagedList FilterAndReturnPagedList(ApiParams apiParams, 
+                                                          ref IQueryable<ICD10Code> query)
+        {
+            var filterBy = apiParams.FilterBy.Trim().ToLowerInvariant();
+            if (!string.IsNullOrEmpty(filterBy))
+            {
+                query = query
+                    .Where(m => m.AbbreviatedDescription.ToLowerInvariant().Contains(filterBy)
+                           || m.FullDescription.ToLowerInvariant().Contains(filterBy)
+                           || m.FullCode.ToLowerInvariant().Contains(filterBy));
+            }
+            return new PagedList(query, apiParams.PageNumber, apiParams.PageSize);
+        }
+
+        public ICD10Code GetCode(string diagnosisCode)
+        {
+            return _codes.FirstOrDefault(c => c.FullCode == diagnosisCode);
+        }
     }
 }

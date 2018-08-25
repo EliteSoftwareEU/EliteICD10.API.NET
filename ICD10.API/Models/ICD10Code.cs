@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace ICD10.API.Models
 {
-    public class ICD10Code
+    public class ICD10Code : ICD10BaseModel
     {
-        public Guid ID { get; set;}
         public Guid ICD10CategoryId { get; set; }
         public string DiagnosisCode { get; set; }
         public string FullCode
