@@ -15,7 +15,7 @@ namespace ICD10.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [ApiExceptionFilter]
-    public class ApiBaseController : Controller
+    public abstract class ApiBaseController : ControllerBase
     {
     }
 }

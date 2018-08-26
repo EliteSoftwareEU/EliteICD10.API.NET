@@ -14,4 +14,10 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <StartAction>Project</StartAction>
+    <LaunchBrowser>false</LaunchBrowser>
+    <LaunchUrl>api/v1/codes</LaunchUrl>
+    <ApplicationURL>https://localhost:5001</ApplicationURL>
+  </PropertyGroup>
 </Project>

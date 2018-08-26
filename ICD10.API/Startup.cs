@@ -17,6 +17,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ICD10.API
 {
@@ -51,6 +52,19 @@ namespace ICD10.API
                             new CamelCasePropertyNamesContractResolver();
                     });
              services.AddRouteAnalyzer();  
+             services.AddSwaggerGen(c =>
+             {
+                c.SwaggerDoc("v1", new Info { 
+                    Title = "Elite ICD10 API", 
+                    Version = "v1",
+                    Contact = new Contact
+                    {
+                        Name = "Marcin Walczak",
+                        Email = "info@elitesoftware.eu"
+                    }
+                });
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+             });
 
         }
 
@@ -71,7 +85,13 @@ namespace ICD10.API
                 routes.MapRouteAnalyzer("/routes"); 
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
+                    template: "{controller=Categories}/{action=Get}/{id?}");
+            });
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Elite ICD10 API");
+                c.RoutePrefix = string.Empty;
             });
         }
     }

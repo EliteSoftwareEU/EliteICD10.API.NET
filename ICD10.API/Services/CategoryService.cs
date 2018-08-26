@@ -17,7 +17,7 @@ namespace ICD10.API.Services
         public CategoryService(ICD10DbContext context)
         {
             _context = context;
-            _categories = _context.Categories.ToList();
+            _categories = _context.Categories.Include(c => c.ICD10Codes).ToList();
         }
 
         public PagedList GetCategories(ApiParams apiParams)

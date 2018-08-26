@@ -17,28 +17,18 @@ namespace ICD10.API.Controllers
             _service = service;
         }
 
-        [HttpGet(Name = "GetCategories")]
-        [Route("find")]
+        [HttpGet]
         [QueryableResult("ICD10ResponseCategoryModel")]
-        public IActionResult Index([FromQuery] ApiParams apiParams)
+        public IActionResult Get([FromQuery] ApiParams apiParams)
         {
             var model = _service.GetCategories(apiParams);
-            return Ok(model);
+            return  Ok(model);
         }
 
-        [Route("by-letter/{firstLetter}")]
-        [HttpGet(Name = "GetCategoriesByLetter")]
-        [QueryableResult("ICD10ResponseCategoryModel")]
-        public IActionResult ByLetter(string firstLetter, [FromQuery] ApiParams apiParams)
+        [HttpGet("{id}")]
+        public IActionResult Get(string id)
         {
-            var model = _service.GetCategories(firstLetter, apiParams);
-            return Ok(model);
-        }
-
-        [Route("show/{categoryCode}")]
-        public IActionResult Show(string categoryCode)
-        {
-            var model = _service.GetCategory(categoryCode);
+            var model = _service.GetCategory(id);
 
             if (model == null)
             {

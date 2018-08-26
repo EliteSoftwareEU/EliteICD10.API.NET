@@ -11,7 +11,7 @@ namespace ICD10.API.Models.Response
         public string Title { get; set; }
         public List<ICD10ResponseCodeModel> Codes { get; set; } = new List<ICD10ResponseCodeModel>();
 
-        public static  List<dynamic> BuildResponseItems(List<dynamic> items)
+        public static new List<dynamic> BuildResponseItems(List<dynamic> items)
         {
             var respItems = new List<dynamic>();
             foreach (var item in items)
