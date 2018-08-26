@@ -1,4 +1,4 @@
 .vs/*
-./bin/*
-./obj/*
+ICD10.API/bin/*
+ICD10.API/obj/*
 .vscode/*
