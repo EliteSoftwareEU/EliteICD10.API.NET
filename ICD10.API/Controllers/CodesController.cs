@@ -37,5 +37,14 @@ namespace ICD10.API.Controllers
                 return Ok(new { ICD10Code = responseModel });
             }
         }
+
+        [HttpGet("from-category/{id}")]
+        [QueryableResult("ICD10ResponseCodeModel")]
+        public IActionResult GetFromCategory(string id, [FromQuery] ApiParams apiParams)
+        {
+            var model = _service.GetCodesFromCategory(id, apiParams);
+            return Ok(model);
+        }
+
     }
 }

@@ -11,4 +11,3 @@
 /Users/ulversson/Kod/eprelite/EliteICD10.API.NET/ICD10.API/obj/Debug/netcoreapp2.1/ICD10.API.RazorTargetAssemblyInfo.cache
 /Users/ulversson/Kod/eprelite/EliteICD10.API.NET/ICD10.API/obj/Debug/netcoreapp2.1/ICD10.API.dll
 /Users/ulversson/Kod/eprelite/EliteICD10.API.NET/ICD10.API/obj/Debug/netcoreapp2.1/ICD10.API.pdb
-/Users/ulversson/Kod/eprelite/EliteICD10.API.NET/ICD10.API/obj/Debug/netcoreapp2.1/ICD10.API.csprojAssemblyReference.cache

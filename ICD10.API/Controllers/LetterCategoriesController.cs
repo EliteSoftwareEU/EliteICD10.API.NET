@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ICD10.API.Controllers
 {
+    [Route("api/v1/letters")]
     public class LetterCategoriesController : ApiBaseController
     {
         readonly ICategoryService _service;
@@ -17,6 +18,7 @@ namespace ICD10.API.Controllers
 
 
         [QueryableResult("ICD10ResponseCategoryModel")]
+        [Route("{firstLetter}/categories")]
         [HttpGet]
         public IActionResult Get(string firstLetter, 
                                 [FromQuery] ApiParams apiParams)
