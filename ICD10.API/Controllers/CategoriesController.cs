@@ -29,7 +29,6 @@ namespace ICD10.API.Controllers
         public IActionResult Get(string id)
         {
             var model = _service.GetCategory(id);
-
             if (model == null)
             {
                 throw new NotFoundException("Category does not exists");

@@ -40,7 +40,8 @@ namespace ICD10.API.Controllers
 
         [HttpGet("from-category/{id}")]
         [QueryableResult("ICD10ResponseCodeModel")]
-        public IActionResult GetFromCategory(string id, [FromQuery] ApiParams apiParams)
+        public IActionResult GetFromCategory(string id, 
+                                             [FromQuery] ApiParams apiParams)
         {
             var model = _service.GetCodesFromCategory(id, apiParams);
             return Ok(model);

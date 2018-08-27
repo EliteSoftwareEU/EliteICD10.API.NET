@@ -3,15 +3,17 @@ using System;
 using ICD10.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace ICD10.API.Migrations
 {
     [DbContext(typeof(ICD10DbContext))]
-    partial class ICD10DbContextModelSnapshot : ModelSnapshot
+    [Migration("20180826164127_AddMappingsModels")]
+    partial class AddMappingsModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,11 +60,21 @@ namespace ICD10.API.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<bool>("Approximate");
+
+                    b.Property<bool>("ChoiceList");
+
+                    b.Property<bool>("Combination");
+
                     b.Property<string>("Flags");
 
                     b.Property<string>("ICD10Code");
 
                     b.Property<string>("ICD9Code");
+
+                    b.Property<bool>("NoMapping");
+
+                    b.Property<bool>("Scenario");
 
                     b.HasKey("ID");
 
@@ -92,11 +104,21 @@ namespace ICD10.API.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<bool>("Approximate");
+
+                    b.Property<bool>("ChoiceList");
+
+                    b.Property<bool>("Combination");
+
                     b.Property<string>("Flags");
 
                     b.Property<string>("ICD10Code");
 
                     b.Property<string>("ICD9Code");
+
+                    b.Property<bool>("NoMapping");
+
+                    b.Property<bool>("Scenario");
 
                     b.HasKey("ID");
 

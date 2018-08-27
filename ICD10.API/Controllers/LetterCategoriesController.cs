@@ -16,7 +16,6 @@ namespace ICD10.API.Controllers
             _service = service;
         }
 
-
         [QueryableResult("ICD10ResponseCategoryModel")]
         [Route("{firstLetter}/categories")]
         [HttpGet]
@@ -26,7 +25,5 @@ namespace ICD10.API.Controllers
             var model = _service.GetCategories(firstLetter, apiParams);
             return Ok(model);
         }
-
-
     }
 }

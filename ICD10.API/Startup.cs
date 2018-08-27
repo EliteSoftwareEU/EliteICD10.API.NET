@@ -44,6 +44,8 @@ namespace ICD10.API
             });
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddTransient<ICodeService, CodeService>();
+            services.AddTransient<IICD9CodeService, ICD9CodeService>();
+            services.AddTransient<IICDMappingService, ICDMappingService>();
             services.AddMvc()
                     .AddJsonOptions(options =>
                     {

@@ -25,6 +25,5 @@ namespace ICD10.API.Controllers
             var model = _service.GetCodes(firstLetter, apiParams);
             return Ok(model);
         }
-    }
-    
+    }   
 }

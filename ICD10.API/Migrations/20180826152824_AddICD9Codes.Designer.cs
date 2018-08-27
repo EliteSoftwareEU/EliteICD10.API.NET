@@ -3,15 +3,17 @@ using System;
 using ICD10.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace ICD10.API.Migrations
 {
     [DbContext(typeof(ICD10DbContext))]
-    partial class ICD10DbContextModelSnapshot : ModelSnapshot
+    [Migration("20180826152824_AddICD9Codes")]
+    partial class AddICD9Codes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,22 +55,6 @@ namespace ICD10.API.Migrations
                     b.ToTable("Codes");
                 });
 
-            modelBuilder.Entity("ICD10.API.Models.ICD10TOICD9Mapping", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Flags");
-
-                    b.Property<string>("ICD10Code");
-
-                    b.Property<string>("ICD9Code");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("ICD10TOICD9Mappings");
-                });
-
             modelBuilder.Entity("ICD10.API.Models.ICD9Code", b =>
                 {
                     b.Property<Guid>("ID")
@@ -85,22 +71,6 @@ namespace ICD10.API.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("ICD9Codes");
-                });
-
-            modelBuilder.Entity("ICD10.API.Models.ICD9TOICD10Mapping", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Flags");
-
-                    b.Property<string>("ICD10Code");
-
-                    b.Property<string>("ICD9Code");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("ICD9TOICD10Mappings");
                 });
 
             modelBuilder.Entity("ICD10.API.Models.ICD10Code", b =>

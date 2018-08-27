@@ -11,6 +11,9 @@ namespace ICD10.API.Data
     {
         public DbSet<ICD10Category> Categories { get; set; }
         public DbSet<ICD10Code> Codes { get; set; }
+        public DbSet<ICD9Code> ICD9Codes { get; set; }
+        public DbSet<ICD9TOICD10Mapping> ICD9TOICD10Mappings { get; set; }
+        public DbSet<ICD10TOICD9Mapping> ICD10TOICD9Mappings { get; set; }
 
         public ICD10DbContext(DbContextOptions<ICD10DbContext> options) : base(options)
         {

@@ -28,9 +28,8 @@ namespace ICD10.API.Services
 
         public PagedList GetCodes(string firstLetter, ApiParams apiParams)
         {
-            var query = _context.Codes.Include(c => c.Category)
-                                .Where(c => c.Category.Code.ToLowerInvariant().StartsWith(firstLetter))
-                                .AsQueryable();
+            var query = _codes.Where(c => c.Category.Code.ToLowerInvariant().StartsWith(firstLetter.ToLowerInvariant()))                                                               
+                              .AsQueryable();
             return FilterAndReturnPagedList(apiParams, ref query);
         }
 

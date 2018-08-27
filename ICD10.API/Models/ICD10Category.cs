@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ICD10.API.Models
 {
-    public class ICD10Category : ICD10BaseModel
+    public class ICD10Category : ICDBaseModel
     {
       
         public string Code { get; set; }
