@@ -1,0 +1,31 @@
+﻿version: '2'
+
+services:
+
+  web:
+    container_name: 'elite-icd-api'
+    image: 'elite-icd-api-app'
+    build:
+      context: .
+      dockerfile: elite-icd-api.dockerfile
+    volumes:
+      - .:/var/www/aspnetcoreapp
+    ports:
+     - "5000:5000"
+    depends_on:
+     - "postgres"
+    networks:
+      - netcorenetwork
+
+  postgres:
+    container_name: 'postgres'
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+    networks:
+      - netcorenetwork
+
+networks:
+  netcorenetwork:
+    driver: bridge
+
