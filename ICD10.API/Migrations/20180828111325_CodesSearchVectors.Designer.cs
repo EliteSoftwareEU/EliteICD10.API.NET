@@ -3,6 +3,7 @@ using System;
 using ICD10.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using NpgsqlTypes;
@@ -10,9 +11,10 @@ using NpgsqlTypes;
 namespace ICD10.API.Migrations
 {
     [DbContext(typeof(ICD10DbContext))]
-    partial class ICD10DbContextModelSnapshot : ModelSnapshot
+    [Migration("20180828111325_CodesSearchVectors")]
+    partial class CodesSearchVectors
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

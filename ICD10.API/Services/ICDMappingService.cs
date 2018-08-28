@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ICD10.API.Data;
 using ICD10.API.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ICD10.API.Services
 {
@@ -15,8 +16,16 @@ namespace ICD10.API.Services
         public ICDMappingService(ICD10DbContext context)
         {
             _context = context;
-            _icd10ToIcd9codes = _context.ICD10TOICD9Mappings.ToList();
-            _icd9ToIcd10codes = _context.ICD9TOICD10Mappings.ToList();
+            _icd10ToIcd9codes = _context.ICD10TOICD9Mappings
+                                        .Include(c => c.ICD9CodeWithMappings)
+                                        .ThenInclude(m => m.ICD9Code)
+                                        .ToList();
+            
+            _icd9ToIcd10codes = _context.ICD9TOICD10Mappings
+                                        .Include(c => c.ICD10CodeWithMappings)
+                                        .ThenInclude(m => m.ICD10Code)
+                                        .ThenInclude(cw => cw.Category)
+                                        .ToList();
         }
 
         public List<ICD9TOICD10Mapping> MapToICD10(string icd9code)

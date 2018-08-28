@@ -16,6 +16,8 @@ namespace ICD10.API.Data
             ICD9CodeSeed.ReadCsvIntoDatabase(environment, context);
             ICD9TOICD10MappingSeed.ReadCsvIntoDatabase(environment, context);
             ICD10TOICD9MappingSeed.ReadCsvIntoDatabase(environment, context);
+            ICD10CodeWithMappingSeed.Run(context);
+            ICD9CodeWIthMappingSeed.Run(context);
         }
     }
 }

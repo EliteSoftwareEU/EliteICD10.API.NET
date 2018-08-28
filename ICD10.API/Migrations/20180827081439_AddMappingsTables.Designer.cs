@@ -3,16 +3,17 @@ using System;
 using ICD10.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using NpgsqlTypes;
 
 namespace ICD10.API.Migrations
 {
     [DbContext(typeof(ICD10DbContext))]
-    partial class ICD10DbContextModelSnapshot : ModelSnapshot
+    [Migration("20180827081439_AddMappingsTables")]
+    partial class AddMappingsTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,14 +48,9 @@ namespace ICD10.API.Migrations
 
                     b.Property<Guid>("ICD10CategoryId");
 
-                    b.Property<NpgsqlTsVector>("SearchVector");
-
                     b.HasKey("ID");
 
                     b.HasIndex("ICD10CategoryId");
-
-                    b.HasIndex("SearchVector")
-                        .HasAnnotation("Npgsql:IndexMethod", "GIN");
 
                     b.ToTable("Codes");
                 });
@@ -102,16 +98,11 @@ namespace ICD10.API.Migrations
 
                     b.Property<string>("LongDescription");
 
-                    b.Property<NpgsqlTsVector>("SearchVector");
-
                     b.Property<string>("ShortDescription");
 
                     b.Property<int>("Version");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("SearchVector")
-                        .HasAnnotation("Npgsql:IndexMethod", "GIN");
 
                     b.ToTable("ICD9Codes");
                 });

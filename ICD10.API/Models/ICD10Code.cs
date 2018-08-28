@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NpgsqlTypes;
 
 namespace ICD10.API.Models
 {
@@ -18,6 +19,7 @@ namespace ICD10.API.Models
         }
         public string AbbreviatedDescription { get; set; }
         public string FullDescription { get; set; }
+        public NpgsqlTsVector SearchVector { get; set; }
         public string CategoryTitle
         {
             get
