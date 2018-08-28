@@ -7,6 +7,7 @@ using ICD10.API.Data;
 using ICD10.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -95,6 +96,11 @@ namespace ICD10.API
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Elite ICD10 API");
                 c.RoutePrefix = string.Empty;
             });
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+
         }
     }
 }

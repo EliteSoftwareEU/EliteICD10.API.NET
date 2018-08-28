@@ -1,0 +1,877 @@
+# Logfile created on 2018-08-28 13:56:12 +0100 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 13:56:12 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6bcba195] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [6bcba195] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 13:57:12 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6a7c5873] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [6a7c5873] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0772798c] Finished in 0.458 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [e36e4c4a] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [e36e4c4a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [70174674] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [b4af3aca] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [b4af3aca] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [1cc9cec9] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [1cc9cec9] Finished in 1.068 seconds with exit status 0 (successful).
+  INFO [691e0111] Running /usr/bin/env mkdir -p /var/www/elite-icd-10-api/shared /var/www/elite-icd-10-api/releases as deployer@178.62.103.26
+ DEBUG [691e0111] Command: /usr/bin/env mkdir -p /var/www/elite-icd-10-api/shared /var/www/elite-icd-10-api/releases
+ DEBUG [4d4c9d1f] 	mkdir: 
+ DEBUG [4d4c9d1f] 	cannot create directory ‘/var/www’
+ DEBUG [4d4c9d1f] 	: Permission denied
+ DEBUG [4d4c9d1f] 	
+ DEBUG [4d4c9d1f] 	mkdir: 
+ DEBUG [4d4c9d1f] 	cannot create directory ‘/var/www’
+ DEBUG [4d4c9d1f] 	: Permission denied
+ DEBUG [4d4c9d1f] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 13:57:49 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [adcc2590] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [adcc2590] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6d56528c] Finished in 0.410 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [84d5e809] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [84d5e809] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [a1b40060] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [32421444] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [32421444] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [83871c5d] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [83871c5d] Finished in 0.713 seconds with exit status 0 (successful).
+  INFO [d1c47c12] Running /usr/bin/env mkdir -p /var/www/elite-icd-10-api/shared /var/www/elite-icd-10-api/releases as deployer@178.62.103.26
+ DEBUG [d1c47c12] Command: /usr/bin/env mkdir -p /var/www/elite-icd-10-api/shared /var/www/elite-icd-10-api/releases
+ DEBUG [fc7e1e9d] 	mkdir: 
+ DEBUG [fc7e1e9d] 	cannot create directory ‘/var/www’
+ DEBUG [fc7e1e9d] 	: Permission denied
+ DEBUG [fc7e1e9d] 	
+ DEBUG [fc7e1e9d] 	mkdir: 
+ DEBUG [fc7e1e9d] 	cannot create directory ‘/var/www’
+ DEBUG [fc7e1e9d] 	: Permission denied
+ DEBUG [fc7e1e9d] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:00:23 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f7a67180] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [f7a67180] Command: /usr/bin/env mkdir -p /tmp
+  INFO [52a3a66a] Finished in 0.408 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [e6943057] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [e6943057] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [68d2fbff] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [3868ba11] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [3868ba11] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [32a7e731] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [32a7e731] Finished in 0.704 seconds with exit status 0 (successful).
+  INFO [f639e3fe] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [f639e3fe] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [97b568a2] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [800189ca] Running /usr/bin/env mkdir -p /home/deployer/apps/shared as deployer@178.62.103.26
+ DEBUG [800189ca] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared
+  INFO [c1a59527] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [e6a7611b] Running [ -f /home/deployer/apps/shared/appsettings.json ] as deployer@178.62.103.26
+ DEBUG [e6a7611b] Command: [ -f /home/deployer/apps/shared/appsettings.json ]
+ DEBUG [122e58cf] Finished in 0.089 seconds with exit status 1 (failed).
+ ERROR linked file /home/deployer/apps/shared/appsettings.json does not exist on 178.62.103.26
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:00:43 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [096ddb9a] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [096ddb9a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7f09ceee] Finished in 0.399 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [0ff8dc88] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [0ff8dc88] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [e1425fe9] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [b320a20d] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [b320a20d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [5a471a7a] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [5a471a7a] Finished in 0.651 seconds with exit status 0 (successful).
+  INFO [0f965654] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [0f965654] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [aeec4f84] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [4b39f4c8] Running [ -f /home/deployer/apps/current/REVISION ] as deployer@178.62.103.26
+ DEBUG [4b39f4c8] Command: [ -f /home/deployer/apps/current/REVISION ]
+ DEBUG [d2cfde98] Finished in 0.085 seconds with exit status 1 (failed).
+ DEBUG [0fb8f63f] Running [ -f /home/deployer/apps/repo/HEAD ] as deployer@178.62.103.26
+ DEBUG [0fb8f63f] Command: [ -f /home/deployer/apps/repo/HEAD ]
+ DEBUG [7cd848d7] Finished in 0.083 seconds with exit status 1 (failed).
+ DEBUG [b5429e1c] Running if test ! -d /home/deployer/apps; then echo "Directory does not exist '/home/deployer/apps'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [b5429e1c] Command: if test ! -d /home/deployer/apps; then echo "Directory does not exist '/home/deployer/apps'" 1>&2; false; fi
+ DEBUG [05c75c2b] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [13fbdf92] Running /usr/bin/env git clone --mirror https://github.com/EliteSoftwareEU/EliteICD10.API.NET /home/deployer/apps/repo as deployer@178.62.103.26
+ DEBUG [13fbdf92] Command: cd /home/deployer/apps && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git clone --mirror https://github.com/EliteSoftwareEU/EliteICD10.API.NET /home/deployer/apps/repo )
+ DEBUG [43bb96b7] 	Cloning into bare repository '/home/deployer/apps/repo'...
+  INFO [43bb96b7] Finished in 1.853 seconds with exit status 0 (successful).
+ DEBUG [07c38f4b] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [07c38f4b] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [b24e3d3c] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [46619899] Running /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET as deployer@178.62.103.26
+ DEBUG [46619899] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET )
+  INFO [e16959b3] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [8d0f91e2] Running /usr/bin/env git remote update --prune as deployer@178.62.103.26
+ DEBUG [8d0f91e2] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [59f879f4] 	Fetching origin
+  INFO [59f879f4] Finished in 0.752 seconds with exit status 0 (successful).
+ DEBUG [c70220e7] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [c70220e7] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [d26fd997] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [87820ca0] Running /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828130045 as deployer@178.62.103.26
+ DEBUG [87820ca0] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828130045 )
+  INFO [996b5235] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [758c6b44] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828130045 as deployer@178.62.103.26
+ DEBUG [758c6b44] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828130045 )
+  INFO [2a8a140c] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [3ec29492] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [3ec29492] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [8260e656] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [72605f29] Running /usr/bin/env git rev-list --max-count=1 master as deployer@178.62.103.26
+ DEBUG [72605f29] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [fae748fc] 	705b4763ddb0972c227b2374945e08708451855c
+ DEBUG [fae748fc] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [bd5f7ced] Running if test ! -d /home/deployer/apps/releases/20180828130045; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130045'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [bd5f7ced] Command: if test ! -d /home/deployer/apps/releases/20180828130045; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130045'" 1>&2; false; fi
+ DEBUG [c3983c06] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [1f4c4ccd] Running /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION as deployer@178.62.103.26
+ DEBUG [1f4c4ccd] Command: cd /home/deployer/apps/releases/20180828130045 && /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION
+  INFO [135786c7] Finished in 0.086 seconds with exit status 0 (successful).
+ DEBUG [ff31658d] Running if test ! -d /home/deployer/apps/releases/20180828130045; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130045'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [ff31658d] Command: if test ! -d /home/deployer/apps/releases/20180828130045; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130045'" 1>&2; false; fi
+ DEBUG [ed0c23e5] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [3f4be6e6] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [3f4be6e6] Command: cd /home/deployer/apps/releases/20180828130045 && /usr/bin/env dotnet restore 
+ DEBUG [b5caea38] 	
+ DEBUG [b5caea38] 	Welcome to .NET Core!
+---------------------
+Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to see available commands or go to https://aka.ms/dotnet-cli-docs.
+
+Telemetry
+--------------
+The .NET Core tools collect usage data in or
+ DEBUG [b5caea38] 	der to improve your experience. The data is anonymous and does not include command-line arguments. The data is collected by Microsoft and shared with the community.
+You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT environment variable 
+ DEBUG [b5caea38] 	to 1 using your favorite shell.
+You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
+ DEBUG [b5caea38] 	
+ DEBUG [b5caea38] 	/usr/share/dotnet/sdk/2.1.105/Sdks/Microsoft.NET.Sdk/build/Microsoft.NET.TargetFrameworkInference.targets(135,5): error : The current .NET SDK does not support targeting .NET Core 2.1.  Either target .NET Core 2.0 or lower, or use a version of the .NET SDK
+ DEBUG [b5caea38] 	 that supports .NET Core 2.1. [/home/deployer/apps/releases/20180828130045/ICD10.API/ICD10.API.csproj]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:09:17 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [342a331e] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [342a331e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [434bebf5] Finished in 0.414 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [15fe9ceb] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [15fe9ceb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [34b3a0bd] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [453edb00] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [453edb00] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [511113b7] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [511113b7] Finished in 0.899 seconds with exit status 0 (successful).
+  INFO [3d5b6aec] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [3d5b6aec] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [58e2c773] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [f1779511] Running [ -f /home/deployer/apps/current/REVISION ] as deployer@178.62.103.26
+ DEBUG [f1779511] Command: [ -f /home/deployer/apps/current/REVISION ]
+ DEBUG [d4a6517d] Finished in 0.084 seconds with exit status 1 (failed).
+ DEBUG [459b3738] Running [ -f /home/deployer/apps/repo/HEAD ] as deployer@178.62.103.26
+ DEBUG [459b3738] Command: [ -f /home/deployer/apps/repo/HEAD ]
+ DEBUG [8215efcb] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/repo
+ DEBUG [212d5754] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [212d5754] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [f5e3683b] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [e4fbb4fc] Running /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET as deployer@178.62.103.26
+ DEBUG [e4fbb4fc] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET )
+  INFO [8b37ed70] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [6d5be667] Running /usr/bin/env git remote update --prune as deployer@178.62.103.26
+ DEBUG [6d5be667] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [752fc0c0] 	Fetching origin
+  INFO [752fc0c0] Finished in 1.423 seconds with exit status 0 (successful).
+ DEBUG [4600f34d] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [4600f34d] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [99d11599] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [dad0dfd3] Running /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828130918 as deployer@178.62.103.26
+ DEBUG [dad0dfd3] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828130918 )
+  INFO [8a6d1975] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [647f53e1] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828130918 as deployer@178.62.103.26
+ DEBUG [647f53e1] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828130918 )
+  INFO [0e9cd6db] Finished in 0.226 seconds with exit status 0 (successful).
+ DEBUG [aec3900d] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [aec3900d] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [62c5d6ae] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [26ac1987] Running /usr/bin/env git rev-list --max-count=1 master as deployer@178.62.103.26
+ DEBUG [26ac1987] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b40836a4] 	705b4763ddb0972c227b2374945e08708451855c
+ DEBUG [b40836a4] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [5fef95ba] Running if test ! -d /home/deployer/apps/releases/20180828130918; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130918'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [5fef95ba] Command: if test ! -d /home/deployer/apps/releases/20180828130918; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130918'" 1>&2; false; fi
+ DEBUG [5bf5090d] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [e9a68236] Running /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION as deployer@178.62.103.26
+ DEBUG [e9a68236] Command: cd /home/deployer/apps/releases/20180828130918 && /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION
+  INFO [048b0124] Finished in 0.084 seconds with exit status 0 (successful).
+ DEBUG [e98d9651] Running if test ! -d /home/deployer/apps/releases/20180828130918; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130918'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [e98d9651] Command: if test ! -d /home/deployer/apps/releases/20180828130918; then echo "Directory does not exist '/home/deployer/apps/releases/20180828130918'" 1>&2; false; fi
+ DEBUG [2ae8451e] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [6d827141] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [6d827141] Command: cd /home/deployer/apps/releases/20180828130918 && /usr/bin/env dotnet restore 
+ DEBUG [de0c223d] 	/usr/share/dotnet/sdk/2.1.105/Sdks/Microsoft.NET.Sdk/build/Microsoft.NET.TargetFrameworkInference.targets(135,5): error : The current .NET SDK does not support targeting .NET Core 2.1.  Either target .NET Core 2.0 or lower, or use a version of the .NET SDK
+ DEBUG [de0c223d] 	 that supports .NET Core 2.1. [/home/deployer/apps/releases/20180828130918/ICD10.API/ICD10.API.csproj]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:11:44 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d851db33] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [d851db33] Command: /usr/bin/env mkdir -p /tmp
+  INFO [97797aaa] Finished in 0.748 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [fa69b935] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [fa69b935] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [d4475101] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [d480eac0] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [d480eac0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [e26cc586] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [e26cc586] Finished in 0.927 seconds with exit status 0 (successful).
+  INFO [e43a7969] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [e43a7969] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [c444e220] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [2d40f679] Running [ -f /home/deployer/apps/current/REVISION ] as deployer@178.62.103.26
+ DEBUG [2d40f679] Command: [ -f /home/deployer/apps/current/REVISION ]
+ DEBUG [6e5517af] Finished in 0.082 seconds with exit status 1 (failed).
+ DEBUG [d0f41404] Running [ -f /home/deployer/apps/repo/HEAD ] as deployer@178.62.103.26
+ DEBUG [d0f41404] Command: [ -f /home/deployer/apps/repo/HEAD ]
+ DEBUG [c9e1cdb3] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/repo
+ DEBUG [969b627b] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [969b627b] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [11394f68] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [78ef2727] Running /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET as deployer@178.62.103.26
+ DEBUG [78ef2727] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET )
+  INFO [3b68b807] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [13f24deb] Running /usr/bin/env git remote update --prune as deployer@178.62.103.26
+ DEBUG [13f24deb] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a0c4b5e5] 	Fetching origin
+  INFO [a0c4b5e5] Finished in 1.085 seconds with exit status 0 (successful).
+ DEBUG [9ec15ece] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [9ec15ece] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [c70100d5] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [878af531] Running /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828131146 as deployer@178.62.103.26
+ DEBUG [878af531] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828131146 )
+  INFO [3b65f9fe] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [09fd4c2b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828131146 as deployer@178.62.103.26
+ DEBUG [09fd4c2b] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828131146 )
+  INFO [2c414e26] Finished in 0.751 seconds with exit status 0 (successful).
+ DEBUG [39013a21] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [39013a21] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [0cc382f0] Finished in 0.082 seconds with exit status 0 (successful).
+ DEBUG [165d995c] Running /usr/bin/env git rev-list --max-count=1 master as deployer@178.62.103.26
+ DEBUG [165d995c] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [882505fb] 	705b4763ddb0972c227b2374945e08708451855c
+ DEBUG [882505fb] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [c09cb999] Running if test ! -d /home/deployer/apps/releases/20180828131146; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131146'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [c09cb999] Command: if test ! -d /home/deployer/apps/releases/20180828131146; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131146'" 1>&2; false; fi
+ DEBUG [7c2caeb8] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [103e99de] Running /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION as deployer@178.62.103.26
+ DEBUG [103e99de] Command: cd /home/deployer/apps/releases/20180828131146 && /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION
+  INFO [2c2a8774] Finished in 0.081 seconds with exit status 0 (successful).
+ DEBUG [4e96d70e] Running if test ! -d /home/deployer/apps/releases/20180828131146; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131146'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [4e96d70e] Command: if test ! -d /home/deployer/apps/releases/20180828131146; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131146'" 1>&2; false; fi
+ DEBUG [0d98e498] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [a126de9e] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [a126de9e] Command: cd /home/deployer/apps/releases/20180828131146 && /usr/bin/env dotnet restore 
+ DEBUG [36057a36] 	/usr/share/dotnet/sdk/2.1.105/Sdks/Microsoft.NET.Sdk/build/Microsoft.NET.TargetFrameworkInference.targets(135,5): error : The current .NET SDK does not support targeting .NET Core 2.1.  Either target .NET Core 2.0 or lower, or use a version of the .NET SDK
+ DEBUG [36057a36] 	 that supports .NET Core 2.1. [/home/deployer/apps/releases/20180828131146/ICD10.API/ICD10.API.csproj]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:18:58 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [91121fa0] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [91121fa0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2341c44c] Finished in 0.481 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [7a7b54ac] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [7a7b54ac] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [bec28c9d] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [42099241] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [42099241] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [a19d4546] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [a19d4546] Finished in 0.924 seconds with exit status 0 (successful).
+  INFO [3990c64b] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [3990c64b] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [27b57aed] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [586bfa1e] Running [ -f /home/deployer/apps/current/REVISION ] as deployer@178.62.103.26
+ DEBUG [586bfa1e] Command: [ -f /home/deployer/apps/current/REVISION ]
+ DEBUG [6edcbc2a] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [8bff0990] Running [ -f /home/deployer/apps/repo/HEAD ] as deployer@178.62.103.26
+ DEBUG [8bff0990] Command: [ -f /home/deployer/apps/repo/HEAD ]
+ DEBUG [840b5067] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/repo
+ DEBUG [7b3def0c] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [7b3def0c] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [886b9235] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [a4b08226] Running /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET as deployer@178.62.103.26
+ DEBUG [a4b08226] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET )
+  INFO [91909805] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [95a03de4] Running /usr/bin/env git remote update --prune as deployer@178.62.103.26
+ DEBUG [95a03de4] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [de762820] 	Fetching origin
+  INFO [de762820] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [5535fe48] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [5535fe48] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [1125153d] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [1a15812a] Running /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828131900 as deployer@178.62.103.26
+ DEBUG [1a15812a] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828131900 )
+  INFO [70205065] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [fdbc5948] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828131900 as deployer@178.62.103.26
+ DEBUG [fdbc5948] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828131900 )
+  INFO [8c70db46] Finished in 0.229 seconds with exit status 0 (successful).
+ DEBUG [5c85609c] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [5c85609c] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [1eac5489] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [37306a8d] Running /usr/bin/env git rev-list --max-count=1 master as deployer@178.62.103.26
+ DEBUG [37306a8d] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [8156c514] 	705b4763ddb0972c227b2374945e08708451855c
+ DEBUG [8156c514] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [0eb45e54] Running if test ! -d /home/deployer/apps/releases/20180828131900; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131900'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [0eb45e54] Command: if test ! -d /home/deployer/apps/releases/20180828131900; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131900'" 1>&2; false; fi
+ DEBUG [72d9bcf9] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [068546d6] Running /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION as deployer@178.62.103.26
+ DEBUG [068546d6] Command: cd /home/deployer/apps/releases/20180828131900 && /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION
+  INFO [5b34147c] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [6eef8bb9] Running if test ! -d /home/deployer/apps/releases/20180828131900; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131900'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [6eef8bb9] Command: if test ! -d /home/deployer/apps/releases/20180828131900; then echo "Directory does not exist '/home/deployer/apps/releases/20180828131900'" 1>&2; false; fi
+ DEBUG [b1267f4b] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [251fc387] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [251fc387] Command: cd /home/deployer/apps/releases/20180828131900 && /usr/bin/env dotnet restore 
+ DEBUG [c1782118] 	/usr/share/dotnet/sdk/2.1.105/Sdks/Microsoft.NET.Sdk/build/Microsoft.NET.TargetFrameworkInference.targets(135,5): error : The current .NET SDK does not support targeting .NET Core 2.1.  Either target .NET Core 2.0 or lower, or use a version of the .NET SDK
+ DEBUG [c1782118] 	 that supports .NET Core 2.1. [/home/deployer/apps/releases/20180828131900/ICD10.API/ICD10.API.csproj]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:22:16 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fa7db799] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [fa7db799] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1d53252c] Finished in 0.464 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [17887cb6] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [17887cb6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [b80596a9] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [836109d6] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [836109d6] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [74b89d45] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [74b89d45] Finished in 1.016 seconds with exit status 0 (successful).
+  INFO [093eb89b] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [093eb89b] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [6c5b4957] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [3c723c5a] Running [ -f /home/deployer/apps/current/REVISION ] as deployer@178.62.103.26
+ DEBUG [3c723c5a] Command: [ -f /home/deployer/apps/current/REVISION ]
+ DEBUG [b66f2c55] Finished in 0.077 seconds with exit status 1 (failed).
+ DEBUG [4ba77eaa] Running [ -f /home/deployer/apps/repo/HEAD ] as deployer@178.62.103.26
+ DEBUG [4ba77eaa] Command: [ -f /home/deployer/apps/repo/HEAD ]
+ DEBUG [a6e80f71] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/repo
+ DEBUG [ea2e60e4] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [ea2e60e4] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [62989cf0] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [093fc5c1] Running /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET as deployer@178.62.103.26
+ DEBUG [093fc5c1] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET )
+  INFO [33395e0e] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [f1f0fa13] Running /usr/bin/env git remote update --prune as deployer@178.62.103.26
+ DEBUG [f1f0fa13] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [834b8387] 	Fetching origin
+  INFO [834b8387] Finished in 0.673 seconds with exit status 0 (successful).
+ DEBUG [25674a99] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [25674a99] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [4ad8595f] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [54e72306] Running /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828132218 as deployer@178.62.103.26
+ DEBUG [54e72306] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828132218 )
+  INFO [04187fa8] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [d62d87f6] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828132218 as deployer@178.62.103.26
+ DEBUG [d62d87f6] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828132218 )
+  INFO [6906d5a4] Finished in 0.238 seconds with exit status 0 (successful).
+ DEBUG [0ca1cabf] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [0ca1cabf] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [369c5a4c] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [c2c2c6ab] Running /usr/bin/env git rev-list --max-count=1 master as deployer@178.62.103.26
+ DEBUG [c2c2c6ab] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [a97f2b21] 	705b4763ddb0972c227b2374945e08708451855c
+ DEBUG [a97f2b21] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [8f30501f] Running if test ! -d /home/deployer/apps/releases/20180828132218; then echo "Directory does not exist '/home/deployer/apps/releases/20180828132218'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [8f30501f] Command: if test ! -d /home/deployer/apps/releases/20180828132218; then echo "Directory does not exist '/home/deployer/apps/releases/20180828132218'" 1>&2; false; fi
+ DEBUG [23fefb50] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [bcfb3b92] Running /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION as deployer@178.62.103.26
+ DEBUG [bcfb3b92] Command: cd /home/deployer/apps/releases/20180828132218 && /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION
+  INFO [71b241de] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [04a0ca00] Running if test ! -d /home/deployer/apps/releases/20180828132218; then echo "Directory does not exist '/home/deployer/apps/releases/20180828132218'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [04a0ca00] Command: if test ! -d /home/deployer/apps/releases/20180828132218; then echo "Directory does not exist '/home/deployer/apps/releases/20180828132218'" 1>&2; false; fi
+ DEBUG [8c6ef933] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [9b93adc0] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [9b93adc0] Command: cd /home/deployer/apps/releases/20180828132218 && /usr/bin/env dotnet restore 
+ DEBUG [c85afed1] 	
+ DEBUG [c85afed1] 	Welcome to .NET Core!
+---------------------
+Learn more about .NET Core: https://aka.ms/dotnet-docs
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order t
+ DEBUG [c85afed1] 	o help us improve your experience. The data is anonymous and doesn't include command-line arguments. The data is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment varia
+ DEBUG [c85afed1] 	ble to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+ DEBUG [c85afed1] 	
+ DEBUG [c85afed1] 	
+ DEBUG [c85afed1] 	ASP.NET Core
+------------
+Successfully installed the ASP.NET Core HTTPS Development Certificate.
+To trust the certificate run 'dotnet dev-certs https --trust' (Windows and macOS only).
+For more information on configuring HTTPS see https://go.microsoft.com/
+ DEBUG [c85afed1] 	fwlink/?linkid=848054.
+ DEBUG [c85afed1] 	
+ DEBUG [c85afed1] 	  Restoring packages for /home/deployer/apps/releases/20180828132218/ICD10.API/ICD10.API.csproj...
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:33:21 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [47db62b9] Running /usr/bin/env mkdir -p /tmp as deployer@178.62.103.26
+ DEBUG [47db62b9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f95cd4c8] Finished in 0.417 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 0.0%
+  INFO Uploading /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh 100.0%
+  INFO [f7da44a6] Running /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh as deployer@178.62.103.26
+ DEBUG [f7da44a6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-elite-icd-10-api-production-ulversson.sh
+  INFO [81a6c098] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [ec24290b] Running /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD as deployer@178.62.103.26
+ DEBUG [ec24290b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git ls-remote https://github.com/EliteSoftwareEU/EliteICD10.API.NET HEAD )
+ DEBUG [b99a6eeb] 	705b4763ddb0972c227b2374945e08708451855c	HEAD
+  INFO [b99a6eeb] Finished in 0.961 seconds with exit status 0 (successful).
+  INFO [7271380c] Running /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [7271380c] Command: /usr/bin/env mkdir -p /home/deployer/apps/shared /home/deployer/apps/releases
+  INFO [a43f4c36] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [f9d9b85a] Running [ -f /home/deployer/apps/current/REVISION ] as deployer@178.62.103.26
+ DEBUG [f9d9b85a] Command: [ -f /home/deployer/apps/current/REVISION ]
+ DEBUG [3549e53c] Finished in 0.078 seconds with exit status 1 (failed).
+ DEBUG [011e5a8d] Running [ -f /home/deployer/apps/repo/HEAD ] as deployer@178.62.103.26
+ DEBUG [011e5a8d] Command: [ -f /home/deployer/apps/repo/HEAD ]
+ DEBUG [ace46f64] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/repo
+ DEBUG [79f38ed9] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [79f38ed9] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [7f664889] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [ca2b58be] Running /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET as deployer@178.62.103.26
+ DEBUG [ca2b58be] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote set-url origin https://github.com/EliteSoftwareEU/EliteICD10.API.NET )
+  INFO [ea09c738] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [43c3852d] Running /usr/bin/env git remote update --prune as deployer@178.62.103.26
+ DEBUG [43c3852d] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6cbda9fe] 	Fetching origin
+  INFO [6cbda9fe] Finished in 0.798 seconds with exit status 0 (successful).
+ DEBUG [d1874d06] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [d1874d06] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [5dd822dd] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [5761548e] Running /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828133322 as deployer@178.62.103.26
+ DEBUG [5761548e] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/releases/20180828133322 )
+  INFO [014fd902] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [434755de] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828133322 as deployer@178.62.103.26
+ DEBUG [434755de] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/releases/20180828133322 )
+  INFO [182c962d] Finished in 0.265 seconds with exit status 0 (successful).
+ DEBUG [5c9bca8f] Running if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [5c9bca8f] Command: if test ! -d /home/deployer/apps/repo; then echo "Directory does not exist '/home/deployer/apps/repo'" 1>&2; false; fi
+ DEBUG [94279668] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [64d8ef2d] Running /usr/bin/env git rev-list --max-count=1 master as deployer@178.62.103.26
+ DEBUG [64d8ef2d] Command: cd /home/deployer/apps/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-elite-icd-10-api-production-ulversson.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [4b2ac7b4] 	705b4763ddb0972c227b2374945e08708451855c
+ DEBUG [4b2ac7b4] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [1006ef3c] Running if test ! -d /home/deployer/apps/releases/20180828133322; then echo "Directory does not exist '/home/deployer/apps/releases/20180828133322'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [1006ef3c] Command: if test ! -d /home/deployer/apps/releases/20180828133322; then echo "Directory does not exist '/home/deployer/apps/releases/20180828133322'" 1>&2; false; fi
+ DEBUG [ad5c669c] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [6b416c5a] Running /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION as deployer@178.62.103.26
+ DEBUG [6b416c5a] Command: cd /home/deployer/apps/releases/20180828133322 && /usr/bin/env echo "705b4763ddb0972c227b2374945e08708451855c" > REVISION
+  INFO [4abff8fb] Finished in 0.084 seconds with exit status 0 (successful).
+ DEBUG [e4795d70] Running if test ! -d /home/deployer/apps/releases/20180828133322; then echo "Directory does not exist '/home/deployer/apps/releases/20180828133322'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [e4795d70] Command: if test ! -d /home/deployer/apps/releases/20180828133322; then echo "Directory does not exist '/home/deployer/apps/releases/20180828133322'" 1>&2; false; fi
+ DEBUG [0e65cf2b] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [b4c5507c] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [b4c5507c] Command: cd /home/deployer/apps/releases/20180828133322 && /usr/bin/env dotnet restore 
+ DEBUG [3bd9d251] 	  Restoring packages for /home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj...
+ DEBUG [c8874e14] Running if test ! -d /home/deployer/apps/releases/20180828133322; then echo "Directory does not exist '/home/deployer/apps/releases/20180828133322'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [c8874e14] Command: if test ! -d /home/deployer/apps/releases/20180828133322; then echo "Directory does not exist '/home/deployer/apps/releases/20180828133322'" 1>&2; false; fi
+ DEBUG [e9584f70] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [f7003ac7] Running /usr/bin/env dotnet publish --output=build --configuration=Release as deployer@178.62.103.26
+ DEBUG [f7003ac7] Command: cd /home/deployer/apps/releases/20180828133322 && /usr/bin/env dotnet publish --output=build --configuration=Release
+ DEBUG [941e3268] 	Microsoft (R) Build Engine version 15.7.145.53551 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+ DEBUG [941e3268] 	  Restoring packages for /home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj...
+ DEBUG [941e3268] 	  Installing Microsoft.CodeAnalysis.Workspaces.Common 2.8.0.
+ DEBUG [941e3268] 	  Installing Microsoft.CodeAnalysis.CSharp.Workspaces 2.8.0.
+ DEBUG [941e3268] 	  Installing NuGet.Frameworks 4.7.0-rtm.5148.
+ DEBUG [941e3268] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration.Contracts 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration.Utils 2.1.0.
+ DEBUG [941e3268] 	  Installing System.Net.WebSockets 4.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration.Templating 2.1.0.
+ DEBUG [941e3268] 	  Installing System.Collections.Specialized 4.0.1.
+ DEBUG [941e3268] 	  Installing System.ComponentModel.Primitives 4.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Features 1.0.3.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.DataProtection.Abstractions 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Cryptography.Internal 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.DotNet.PlatformAbstractions 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Authorization 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Razor.Language 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration.Core 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Localization.Abstractions 1.0.3.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.WebUtilities 1.0.3.
+ DEBUG [941e3268] 	  Installing Microsoft.DotNet.InternalAbstractions 1.0.0.
+ DEBUG [941e3268] 	  Installing System.Security.Claims 4.0.1.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Hosting.Server.Abstractions 1.0.3.
+ DEBUG [941e3268] 	  Installing System.ComponentModel.TypeConverter 4.1.0.
+ DEBUG [941e3268] 	  Installing System.Linq.Expressions 4.1.1.
+ DEBUG [941e3268] 	  Installing AspNetCore.RouteAnalyzer 0.5.1.
+ DEBUG [941e3268] 	  Installing CsvHelper 7.1.1.
+ DEBUG [941e3268] 	  Installing Swashbuckle.AspNetCore 3.0.0.
+ DEBUG [941e3268] 	  Installing Npgsql.EntityFrameworkCore.PostgreSQL 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.App 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration.Design 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc 2.0.0.
+ DEBUG [941e3268] 	  Installing System.Reflection.TypeExtensions 4.4.0.
+ DEBUG [941e3268] 	  Installing Swashbuckle.AspNetCore.SwaggerUI 3.0.0.
+ DEBUG [941e3268] 	  Installing Swashbuckle.AspNetCore.Swagger 3.0.0.
+ DEBUG [941e3268] 	  Installing Swashbuckle.AspNetCore.SwaggerGen 3.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.EntityFrameworkCore 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.EntityFrameworkCore.Relational 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.EntityFrameworkCore.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Npgsql 4.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Options.ConfigurationExtensions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.ObjectPool 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.FileProviders.Abstractions 2.1.0.
+  Installing Microsoft.Extensions.Localization 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Options 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Logging.Debug 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Logging.Abstractions 2.1.0.
+  Installing Microsoft.Extensions.Logging.EventSource 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Logging.TraceSource 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Logging 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Authentication.Cookies 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.FileProviders.Composite 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Net.Http.Headers 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Hosting.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Localization.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Logging.Configuration 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Authentication.Core 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.FileProviders.Embedded 2.1.0.
+ DEBUG [941e3268] 	  Installing System.ComponentModel 4.0.1.
+ DEBUG [941e3268] 	  Installing Microsoft.Net.Http.Headers 1.0.3.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Abstractions 1.0.3.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.DependencyInjection.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.FileSystemGlobbing 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Logging.Console 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.DependencyInjection 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.CommandLine 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.Json 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Http 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.Binder 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Hosting.Server.Abstractions 1.0.4.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.Abstractions 1.0.2.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.UserSecrets 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.Ini 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.FileProviders.Physical 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.FileExtensions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.DependencyInjection.Abstractions 1.0.2.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.EnvironmentVariables 2.1.0.
+  Installing Microsoft.Extensions.Hosting 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.KeyPerFile 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Localization 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.StaticFiles 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.RazorPages 2.1.0.
+ DEBUG [941e3268] 	  Installing System.Text.Encodings.Web 4.0.1.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Caching.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Razor.ViewCompilation 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.EntityFrameworkCore.Analyzers 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Caching.Memory 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.ApiExplorer 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.ResponseCaching 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.SignalR.Protocols.Json 1.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.EntityFrameworkCore.InMemory 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.TagHelpers 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.ResponseCompression 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Configuration 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.SpaServices 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Primitives 1.0.1.
+  Installing Microsoft.AspNetCore.Razor 2.1.0.
+  Installing Microsoft.AspNetCore.ResponseCaching.Abstractions 2.1.0.
+  Installing Microsoft.AspNetCore.SignalR.Common 1.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.DataProtection 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Routing.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.SignalR 1.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Razor.Extensions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.SpaServices.Extensions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Razor.Runtime 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Routing 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Identity.Core 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Identity.Stores 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.WebEncoders 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.WebUtilities 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.Primitives 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.DataAnnotations 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Server.Kestrel 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.NodeServices 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Cors 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Localization 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Session 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Https 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Rewrite 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Owin 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Identity 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Html.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Formatters.Xml 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Analyzers 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Hosting.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Features 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Localization.Routing 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.DataProtection.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Hosting.Server.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.Extensions.DependencyModel 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.EntityFrameworkCore.Tools 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Identity.UI 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Formatters.Json 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Identity.EntityFrameworkCore 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Cryptography.Internal 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.DataProtection.Extensions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Authorization.Policy 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.ViewFeatures 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Diagnostics.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Abstractions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.HttpOverrides 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Connections.Common 1.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Mvc.Abstractions 2.0.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Cors 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Extensions 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Authorization.Policy 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Razor.Language 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Authentication.OAuth 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore 2.1.0.
+ DEBUG [941e3268] 	  Installing Microsoft.AspNetCore.Http.Connections 1.0.0.
+  INFO [5acf39fb] Running /usr/bin/env ln -s /home/deployer/apps/releases/20180828133322 /home/deployer/apps/releases/current as deployer@178.62.103.26
+ DEBUG [5acf39fb] Command: /usr/bin/env ln -s /home/deployer/apps/releases/20180828133322 /home/deployer/apps/releases/current
+  INFO [2ca8fd73] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [08b6fe1b] Running /usr/bin/env mv /home/deployer/apps/releases/current /home/deployer/apps as deployer@178.62.103.26
+ DEBUG [08b6fe1b] Command: /usr/bin/env mv /home/deployer/apps/releases/current /home/deployer/apps
+  INFO [79ef1d8c] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [d88177c5] Running /usr/bin/env ls -x /home/deployer/apps/releases as deployer@178.62.103.26
+ DEBUG [d88177c5] Command: /usr/bin/env ls -x /home/deployer/apps/releases
+ DEBUG [bda8083e] 	20180828130045	20180828130918	20180828131146	20180828131900	20180828132218
+20180828133322
+ DEBUG [bda8083e] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 178.62.103.26
+ DEBUG [52a7b6a7] Running [ -d /home/deployer/apps/current ] as deployer@178.62.103.26
+ DEBUG [52a7b6a7] Command: [ -d /home/deployer/apps/current ]
+ DEBUG [3b0059bf] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [26740688] Running /usr/bin/env readlink /home/deployer/apps/current as deployer@178.62.103.26
+ DEBUG [26740688] Command: /usr/bin/env readlink /home/deployer/apps/current
+ DEBUG [9098d870] 	/home/deployer/apps/releases/20180828133322
+ DEBUG [9098d870] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [cff4b570] Running /usr/bin/env rm -rf /home/deployer/apps/releases/20180828130045 as deployer@178.62.103.26
+ DEBUG [cff4b570] Command: /usr/bin/env rm -rf /home/deployer/apps/releases/20180828130045
+  INFO [65639e24] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [42a28f2b] Running if test ! -d /home/deployer/apps/releases; then echo "Directory does not exist '/home/deployer/apps/releases'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [42a28f2b] Command: if test ! -d /home/deployer/apps/releases; then echo "Directory does not exist '/home/deployer/apps/releases'" 1>&2; false; fi
+ DEBUG [4ad5873e] Finished in 0.081 seconds with exit status 0 (successful).
+  INFO [4aa9ad7b] Running /usr/bin/env echo "Branch master (at 705b4763ddb0972c227b2374945e08708451855c) deployed as release 20180828133322 by ulversson" >> /home/deployer/apps/revisions.log as deployer@178.62.103.26
+ DEBUG [4aa9ad7b] Command: cd /home/deployer/apps/releases && /usr/bin/env echo "Branch master (at 705b4763ddb0972c227b2374945e08708451855c) deployed as release 20180828133322 by ulversson" >> /home/deployer/apps/revisions.log
+  INFO [356979b3] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:40:03 +0100 cap production dotnet:restore
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4b6eed08] Running if test ! -d /home/deployer/apps/current; then echo "Directory does not exist '/home/deployer/apps/current'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [4b6eed08] Command: if test ! -d /home/deployer/apps/current; then echo "Directory does not exist '/home/deployer/apps/current'" 1>&2; false; fi
+ DEBUG [bbdb18e3] Finished in 0.418 seconds with exit status 0 (successful).
+  INFO [61a7b5fb] Running /usr/bin/env dotnet restore  as deployer@178.62.103.26
+ DEBUG [61a7b5fb] Command: cd /home/deployer/apps/current && /usr/bin/env dotnet restore 
+ DEBUG [6a89bc2b] 	  Restoring packages for /home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj...
+ DEBUG [6a89bc2b] 	  Installing System.ComponentModel.Primitives 4.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http.Features 1.0.3.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.DataProtection.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Cryptography.Internal 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Razor.Language 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.DotNet.PlatformAbstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authorization 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Razor 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.CodeAnalysis.Razor 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Razor.Extensions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Localization.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.ResponseCaching.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http.Features 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Net.Http.Headers 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Hosting.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.JsonPatch 1.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Antiforgery 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.WebEncoders 1.0.3.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Hosting.Abstractions 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Options 1.0.2.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.ObjectPool 1.0.1.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Routing.Abstractions 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.Abstractions 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http.Extensions 1.0.3.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.Facebook 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.Google 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.JwtBearer 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.MicrosoftAccount 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Localization 1.0.3.
+ DEBUG [6a89bc2b] 	  Installing System.ComponentModel.Annotations 4.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.OpenIdConnect 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.Twitter 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.WsFederation 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authorization 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Connections.Abstractions 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.CookiePolicy 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Cryptography.KeyDerivation 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.DataProtection 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Diagnostics 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.HostFiltering 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Hosting 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http.Connections 1.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.HttpsPolicy 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.JsonPatch 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.MiddlewareAnalysis 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Core 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Razor 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.ViewFeatures 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Razor.Design 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Razor.Language 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.PlatformAbstractions 1.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Logging.Abstractions 1.0.2.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.HttpSys 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.IISIntegration 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.WebSockets 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Core 2.1.0.
+  Installing Microsoft.AspNetCore.SignalR.Core 1.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.CodeAnalysis.Razor 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.EntityFrameworkCore.Design 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.EntityFrameworkCore.SqlServer 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Caching.SqlServer 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Configuration.Xml 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.DiagnosticAdapter 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.FileProviders.Composite 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.VisualStudio.Web.CodeGenerators.Mvc 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing System.IO.Pipelines 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Win32.Registry 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Security.Cryptography.Xml 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Security.Principal.Windows 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Diagnostics.DiagnosticSource 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Reflection.Metadata 1.6.0.
+ DEBUG [6a89bc2b] 	  Installing System.Text.Encodings.Web 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Buffers 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.CSharp 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.DependencyModel 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing System.Threading.Tasks.Extensions 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.ComponentModel.Annotations 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.CodeAnalysis.CSharp 2.8.0.
+ DEBUG [6a89bc2b] 	  Installing System.Memory 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Numerics.Vectors 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Runtime.CompilerServices.Unsafe 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Security.Cryptography.Cng 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Threading.Channels 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.DependencyModel 1.0.0.
+ DEBUG [6a89bc2b] 	  Installing System.Net.WebSockets.WebSocketProtocol 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.FileProviders.Abstractions 1.0.1.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.CodeAnalysis.Common 2.8.0.
+ DEBUG [6a89bc2b] 	  Installing System.Collections.Immutable 1.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Data.SqlClient 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http 1.0.3.
+  Installing Microsoft.AspNetCore.Hosting 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing System.ValueTuple 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Routing 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.IISIntegration 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.Kestrel 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Diagnostics 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Https 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.ApiExplorer 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Cors 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.DataAnnotations 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Abstractions 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Formatters.Json 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Localization 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.RazorPages 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.TagHelpers 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.ViewFeatures 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Hosting.Abstractions 1.0.3.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.ApiExplorer 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Core 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.DataAnnotations 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Routing 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.StaticFiles 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.FileProviders.Embedded 1.0.1.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Formatters.Json 1.0.4.
+ DEBUG [6a89bc2b] 	  Installing System.Security.AccessControl 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Security.Cryptography.Pkcs 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing System.Security.Permissions 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authorization 1.0.3.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.DotNet.PlatformAbstractions 2.1.0.
+ DEBUG [6a89bc2b] 	  Installing System.Text.Encoding.CodePages 4.5.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore 2.1.0.
+  Installing Microsoft.AspNetCore.Diagnostics.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Hosting.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http.Extensions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.WebUtilities 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Hosting.Server.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Routing.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Authentication.Core 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.HttpOverrides 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Core 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Http.Abstractions 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Core 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Cors 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.Extensions.Localization 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Mvc.Razor 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Localization 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Razor.Runtime 2.0.0.
+ DEBUG [6a89bc2b] 	  Installing Microsoft.AspNetCore.Antiforgery 2.0.0.
+ DEBUG [6a89bc2b] 	/home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj : warning NU1604: Project dependency Microsoft.AspNetCore.App does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore res
+ DEBUG [6a89bc2b] 	ults. [/home/deployer/apps/releases/20180828133322/ICD10.API.sln]
+ DEBUG [6a89bc2b] 	  Generating MSBuild file /home/deployer/apps/releases/20180828133322/ICD10.API/obj/ICD10.API.csproj.nuget.g.props.
+ DEBUG [6a89bc2b] 	  Generating MSBuild file /home/deployer/apps/releases/20180828133322/ICD10.API/obj/ICD10.API.csproj.nuget.g.targets.
+ DEBUG [6a89bc2b] 	  Restore completed in 4.05 sec for /home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj.
+  INFO [6a89bc2b] Finished in 6.804 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-28 14:40:20 +0100 cap production dotnet:publish
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e0269045] Running if test ! -d /home/deployer/apps/current; then echo "Directory does not exist '/home/deployer/apps/current'" 1>&2; false; fi as deployer@178.62.103.26
+ DEBUG [e0269045] Command: if test ! -d /home/deployer/apps/current; then echo "Directory does not exist '/home/deployer/apps/current'" 1>&2; false; fi
+ DEBUG [77775245] Finished in 0.457 seconds with exit status 0 (successful).
+  INFO [6abf798d] Running /usr/bin/env dotnet publish --output=build --configuration=Release as deployer@178.62.103.26
+ DEBUG [6abf798d] Command: cd /home/deployer/apps/current && /usr/bin/env dotnet publish --output=build --configuration=Release
+ DEBUG [20cf478b] 	Microsoft (R) Build Engine version 15.7.145.53551 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+ DEBUG [20cf478b] 	/home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj : warning NU1604: Project dependency Microsoft.AspNetCore.App does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore res
+ DEBUG [20cf478b] 	ults. [/home/deployer/apps/releases/20180828133322/ICD10.API.sln]
+ DEBUG [20cf478b] 	  Restore completed in 72.17 ms for /home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj.
+ DEBUG [20cf478b] 	  You are working with a preview version of the .NET Core SDK. You can define the SDK version via a global.json file in the current project. More at https://go.microsoft.com/fwlink/?linkid=869452
+ DEBUG [20cf478b] 	/home/deployer/apps/releases/20180828133322/ICD10.API/ICD10.API.csproj : warning NU1604: Project dependency Microsoft.AspNetCore.App does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore res
+ DEBUG [20cf478b] 	ults.
+ DEBUG [20cf478b] 	  ICD10.API -> /home/deployer/apps/releases/20180828133322/ICD10.API/bin/Release/netcoreapp2.1/ICD10.API.dll
+ DEBUG [20cf478b] 	  ICD10.API -> /home/deployer/apps/releases/20180828133322/ICD10.API/build/
+  INFO [20cf478b] Finished in 9.544 seconds with exit status 0 (successful).
