@@ -9,13 +9,13 @@ namespace ICD10.API.Services
 {
     public class ICD9CodeService : IICD9CodeService
     {
-        readonly List<ICD9Code> _codes;
+        readonly IQueryable<ICD9Code> _codes;
         readonly ICD10DbContext _context;
 
         public ICD9CodeService(ICD10DbContext context) 
         {
             _context = context;
-            _codes = _context.ICD9Codes.ToList();    
+            _codes = _context.ICD9Codes;    
         }
 
         public ICD9Code GetCode(string diagnosisCode)

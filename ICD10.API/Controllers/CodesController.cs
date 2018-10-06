@@ -17,7 +17,9 @@ namespace ICD10.API.Controllers
         {
             _service = service;
         }
-
+        /// <summary>
+        /// Gets all ICD10 codes, can be filtered/search with filterBy param
+        /// </summary>
         [HttpGet]
         [QueryableResult("ICD10ResponseCodeModel")]
         public IActionResult Get([FromQuery] ApiParams apiParams)
@@ -25,7 +27,10 @@ namespace ICD10.API.Controllers
             var model = _service.GetCodes(apiParams);
             return Ok(model);
         }
-
+        /// <summary>
+        /// Gets a specific code details by ICD10 code, where id is the ICD 10 Code
+        /// </summary>
+        /// <param name="id"></param>  
         [HttpGet("{id}")]
         public IActionResult Get(string id)
         {
@@ -38,6 +43,11 @@ namespace ICD10.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Gets all diagnosis codes from a specific ICD10 category
+        /// where id is the ICD10 category id
+        /// </summary>
+        /// <param name="id"></param>  
         [HttpGet("from-category/{id}")]
         [QueryableResult("ICD10ResponseCodeModel")]
         public IActionResult GetFromCategory(string id, 

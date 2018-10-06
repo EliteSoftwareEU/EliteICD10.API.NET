@@ -1,0 +1,16 @@
+﻿[Unit]
+Description=Elite .NET ICD Web API 
+
+[Service]
+WorkingDirectory=/home/deployer/apps/current/ICD10.API/build/
+ExecStart=/usr/bin/dotnet /home/deployer/apps/current/ICD10.API/build/ICD10.API.dllx
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+SyslogIdentifier=icd-elite-api
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target

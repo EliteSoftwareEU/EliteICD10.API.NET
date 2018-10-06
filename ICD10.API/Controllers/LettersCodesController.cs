@@ -16,6 +16,10 @@ namespace ICD10.API.Controllers
             _service = service;
         }
 
+        /// <summary>
+        /// Gets all codes starting with a given first letter, 
+        /// can be filtered/search with filterBy param
+        /// </summary>
         [HttpGet]
         [Route("{firstLetter}/codes")]
         [QueryableResult("ICD10ResponseCodeModel")]

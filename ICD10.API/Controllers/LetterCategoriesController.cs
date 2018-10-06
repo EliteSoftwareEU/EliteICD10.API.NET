@@ -16,6 +16,10 @@ namespace ICD10.API.Controllers
             _service = service;
         }
 
+        /// <summary>
+        /// Gets all categories starting with a given first letter, 
+        /// can be filtered/search with filterBy param
+        /// </summary>
         [QueryableResult("ICD10ResponseCategoryModel")]
         [Route("{firstLetter}/categories")]
         [HttpGet]

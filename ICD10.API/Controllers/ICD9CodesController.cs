@@ -18,14 +18,22 @@ namespace ICD10.API.Controllers
             _service = service;
         }
 
+        /// <summary>
+        /// Gets all ICD9 codes, can be filtered/search with filterBy param
+        /// </summary>
         [HttpGet]
         [QueryableResult("ICD9ResponseCodeModel")]
+
         public IActionResult Get([FromQuery] ApiParams apiParams)
         {
             var model = _service.GetCodes(apiParams);
             return Ok(model);
         }
 
+        /// <summary>
+        /// Gets a specific code details for a given ICD9 code, where id is the ICD9 Code
+        /// </summary>
+        /// <param name="id"></param>  
         [HttpGet("{id}")]
         public IActionResult Get(string id)
         {

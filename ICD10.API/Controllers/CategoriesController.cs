@@ -16,7 +16,9 @@ namespace ICD10.API.Controllers
         {
             _service = service;
         }
-
+        /// <summary>
+        /// Gets all categories, can be filtered/search with filterBy param
+        /// </summary>
         [HttpGet]
         [QueryableResult("ICD10ResponseCategoryModel")]
         public IActionResult Get([FromQuery] ApiParams apiParams)
@@ -25,6 +27,10 @@ namespace ICD10.API.Controllers
             return  Ok(model);
         }
 
+        /// <summary>
+        /// Gets a specific category by category code, where id is the category code
+        /// </summary>
+        /// <param name="id"></param>  
         [HttpGet("{id}")]
         public IActionResult Get(string id)
         {
